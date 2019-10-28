@@ -105,9 +105,6 @@
 #define SCREEN_WIDTH	640
 #define SCREEN_HEIGHT	480
 
-#define ZOOM_WIDTH		384
-#define ZOOM_HEIGHT		224
-
 // If defined, use 32-bit colors instead of 8-bit [Default -> Undefined]
 //#define RGBMODE
 

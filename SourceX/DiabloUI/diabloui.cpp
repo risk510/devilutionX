@@ -613,6 +613,7 @@ void UiPollAndRender()
 		UiFocusNavigation(&event);
 		UiHandleEvents(&event);
 	}
+	SDL_FillRect(GetOutputSurface(), NULL, 0x000000);
 	UiRenderItems(gUiItems, gUiItemCnt);
 	DrawMouse();
 	UiFadeIn();

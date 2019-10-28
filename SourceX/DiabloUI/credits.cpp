@@ -208,6 +208,7 @@ void CreditsRenderer::Render()
 		return;
 	prev_offset_y_ = offset_y;
 
+	SDL_FillRect(GetOutputSurface(), NULL, 0x000000);
 	DrawArt(0, 0, &ArtBackground);
 	if (font == nullptr)
 		return;
