@@ -16,7 +16,9 @@
 #include "Utils.hpp"
 
 #if (!defined(ZT_SALSA20_SSE)) && (defined(__SSE2__) || defined(__WINDOWS__))
+#if 0
 #define ZT_SALSA20_SSE 1
+#endif
 #endif
 
 #ifdef ZT_SALSA20_SSE

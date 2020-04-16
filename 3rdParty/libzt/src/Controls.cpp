@@ -47,7 +47,7 @@
 
 #if defined(_WIN32)
 WSADATA wsaData;
-#include <Windows.h>
+#include <windows.h>
 #endif
 
 #ifdef SDK_JNI

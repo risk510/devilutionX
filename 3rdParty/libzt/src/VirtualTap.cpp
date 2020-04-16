@@ -245,6 +245,11 @@ void VirtualTap::scanMulticastGroups(std::vector<MulticastGroup> &added,
 	std::vector<MulticastGroup> newGroups;
 	Mutex::Lock _l(_multicastGroups_m);
 	// TODO: get multicast subscriptions
+
+	// Hardcoded MAC for IPv6 multicast address
+	// ff0e:a8a9:b611:58ce:0412:fd73:3786:6fb7
+	newGroups.push_back(MulticastGroup(MAC(0x33, 0x33, 0x37, 0x86, 0x6f, 0xb7), 0));
+
 	std::vector<InetAddress> allIps(ips());
 	for (std::vector<InetAddress>::iterator ip(allIps.begin());ip!=allIps.end();++ip)
 		newGroups.push_back(MulticastGroup::deriveMulticastGroupForAddressResolution(*ip));

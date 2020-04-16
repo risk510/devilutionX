@@ -46,10 +46,10 @@ extern int errno;
 #include "Options.h"
 
 #if defined(_WIN32)
-#include <WinSock2.h>
-#include <Windows.h>
-#include <IPHlpApi.h>
-#include <Ifdef.h>
+#include <winsock2.h>
+#include <windows.h>
+#include <iphlpapi.h>
+#include <ifdef.h>
 #endif
 
 namespace ZeroTier {

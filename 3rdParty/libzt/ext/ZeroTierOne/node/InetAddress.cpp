@@ -30,6 +30,10 @@
 
 #include <string>
 
+#ifdef _WIN32
+#include <ws2tcpip.h>
+#endif
+
 #include "Constants.hpp"
 #include "InetAddress.hpp"
 #include "Utils.hpp"

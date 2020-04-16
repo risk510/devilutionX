@@ -67,10 +67,12 @@ typedef int socklen_t;
 #endif
 
 #if defined(_WIN32)
-#include <WinSock2.h>
+#include <winsock2.h>
 #include <stdint.h>
-#include <WS2tcpip.h>
-#include <Windows.h>
+#include <ws2tcpip.h>
+#include <windows.h>
+#else
+#include <sys/socket.h>
 #endif
 
 #if defined(_MSC_VER)
